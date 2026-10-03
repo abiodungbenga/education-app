@@ -39,7 +39,7 @@ class OnboardingPage extends StatelessWidget {
 
           SizedBox(height: 15),
           TextButton(
-            onPressed: () => Navigator.pushReplacement(
+            onPressed: () => Navigator.push(
     context,
     MaterialPageRoute(builder: (context) => LoginPage()),
     ),
