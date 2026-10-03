@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:app_project_micheal/modules/authentication/login/login_page.dart';
 import 'package:flutter/material.dart';
 
 import '../onboarding/onboarding_page.dart';
@@ -34,6 +35,7 @@ class _SplashPageState extends State<SplashPage> {
     // TODO: implement dispose
     super.dispose();
   }
+
 
   @override
   Widget build(BuildContext context) {

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../authentication/login/login_page.dart';
+
 class OnboardingPage extends StatelessWidget {
   const OnboardingPage({Key? key}) : super(key: key);
 
@@ -37,7 +39,10 @@ class OnboardingPage extends StatelessWidget {
 
           SizedBox(height: 15),
           TextButton(
-            onPressed: () {},
+            onPressed: () => Navigator.pushReplacement(
+    context,
+    MaterialPageRoute(builder: (context) => LoginPage()),
+    ),
             style: ButtonStyle(
               backgroundColor: MaterialStateProperty.all<Color>(
                 Colors.deepPurpleAccent,
